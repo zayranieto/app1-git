@@ -1,0 +1,158 @@
+﻿ <!doctype html>
+  <html>
+   <head>
+   <meta charset="utf-8">
+   <title>Primera Aplicación</title>
+
+   <!--grupo CSS-->
+   <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+   <!--<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+   <link rel="strylesheet" href="css/jquery.mbile.structure-1.4.5.min.css"/>-->
+   <!--grupo JavaScript-->
+   <script src="js/jquery-1.11.2.min.js"></script>
+   <script src="js/jquery.mobile-1.4.5.min.js"></script>
+   <script src="js/acciones.js"></script>
+   <script src="phonegap.js"></script>
+   
+   
+  </head>
+
+ <body>
+ 
+    <div data-role="page" id="Principal" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"    data-back-btn-theme="b">
+       <h1>Datos personales del alumno </h1>
+     </div>
+     <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Foto de Perfil</h1>
+          <div>
+           <p>Esta es mi imagen de perfil: </p>
+           <br>
+          </div>
+          <div>
+            <img src="imagenes/fotoPerfil.png" width"100%" height="100%">
+          </div>
+        </div>
+       </div>
+       <div>
+         <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+         <li class="ui-first-child ui-last-child">
+            <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2> Datos generales </h2>
+               <p> Se muestra el nombre </p>
+            </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+            <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Fecha de Nacimiento</h2>
+               <p>Se muestra el día, mes y año de nacimiento</p>
+            </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Domicilio</h2>
+               <p>Muestra el domicilio del alumno </p>
+            </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Deporte favorito</h2>
+               <p>Muestra el deporte que mas le agrada al alumno  </p>
+            </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>OTROS GUSTOS E  INTERESES</h2>
+               <p>Muestra otros gustos del alumno</p>
+            </a>
+        </li>
+        </ul>
+      </div>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+         <div>
+           <img src="imagenes/persona_rosa.png" width="46" height="46">
+         </div>
+         <div>
+           <h4>Aplicacion Uno</h4>
+           <h4>Zayra Nieto Anaya</h4>
+         </div>
+       </div>
+      </div>
+      <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> NOMBRE </h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+            <h2>ZAYRA NIETO ANAYA</h2>
+          </div>
+        </div>
+        <div data-role="footer" data-theme"a" data-position="fixed">
+           <h4>Aplicacion Uno, ZNA</h4>
+        </div>
+       </div>
+       
+       
+     <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> FECHA DE NACIMIENTO</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div>
+           <h2>24 de Febrero de 2000</h2></div>
+       </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicacion Uno, ZNA</h4>
+      </div>
+       </div>
+       
+       
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>DOMICILIO</h1>
+       </div>
+       <div data-role="content" align="center">
+          <div>
+             <h2>Av. 20 de Noviembre #2 San Isidro Huilotepec</h2></div>
+          </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Uno,ZNA</h4>
+        </div>
+        </div>
+        
+        
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>DEPORTE FAVORITO</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div>
+           <h2>Basquetbol</h2>
+           <img src="imagenes/deporte.jpg" width="50%" height="50%">
+         </div>
+        </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+            <h4>Aplicacion Uno, ZNA</h4>
+       </div>
+       </div>
+       
+       
+       <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+            <h1>GUSTOS E INTERESES</h1>
+         </div>
+         <div data-role="content" align="center">
+          <div>
+            <h2>Escuchar musica y salir con amigos</h2></div>
+            <img src="imagenes/pasatiempo.jpg" width="50%" height="50%">
+          </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicacion Uno,ZNA</h4>
+       </div>
+     </div>
+            
+         
+         
+ </body>
+ </html>
